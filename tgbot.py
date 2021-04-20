@@ -1,20 +1,15 @@
 import os
-import time # для контроля над временем 
-import telebot #для контроля смс запросов 
-import subprocess #для усиления мощности потоков
-import random  #для рандомизации
+import time 
+import telebot 
+import subprocess 
+import random  
 from telebot import types
-import urllib3
-import json
+
 
 bot = telebot.TeleBot("1033264372:AAEogSXODz4cInO1FEyzB59yREEa62lYwK8") 
 ID = '1035726612'
 b = 1035726612 - 1
 b1 = ID
-u = ["отправлено!",'Не отправлено!']
-otp = random.choice(u)
-
-
 
 
 bot.send_message(ID, 'Online!')
